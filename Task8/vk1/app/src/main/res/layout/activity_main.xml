@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="417dp"
+        android:id="@+id/listView"
+        android:layout_weight="0.78">
+
+    </ListView>
+
+    <Button
+        android:text="Мои сообщения"
+        android:layout_width="118dp"
+        android:layout_height="39dp"
+        android:id="@+id/showMessage"
+        android:layout_weight="0.41" />
+
+</LinearLayout>

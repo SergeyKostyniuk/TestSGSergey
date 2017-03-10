@@ -1,0 +1,7 @@
+INDEX VERSION 1.129+C:\Users\serge\SoftGroupKhm\.metadata\.plugins\org.eclipse.jdt.core
+1972174994.index
+2609078718.index
+2632885671.index
+3957953841.index
+42610692.index
+99087389.index

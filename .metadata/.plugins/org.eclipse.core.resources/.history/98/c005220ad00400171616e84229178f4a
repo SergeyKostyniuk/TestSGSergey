@@ -1,0 +1,10 @@
+package ua.sergey.kostyniuk;
+
+public class Complementary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

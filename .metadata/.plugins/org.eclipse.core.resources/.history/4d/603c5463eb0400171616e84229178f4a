@@ -1,0 +1,43 @@
+package ua.sergey.kostyniuk;
+
+public class Sort {
+	public static String[] m = 
+		{"agreg dgbf dge","agreg dgbf mge","agreg dgbf mge","agreg dgbf mge","agreg dgbf ge","2","a","a","a","a","a","a","a","agreg dgbf dge","3","agreg dgbf dge","a","agreg dgbf dge","1","2","agreg dgbf dge","a","6","a"}; //Наш массив
+    public static String pCh[] = new String[m.length]; //Массив предыдущих чисел
+    public static int ts;
+    public static int tss;
+    public static int[] n = new int[m.length];   //Номера з повторами
+    public static void main(String[] args) {     
+        int k = 0;
+
+		String ch;
+        for(ts = 0; ts<m.length; ts++){
+        	
+            if (!povtor(ch=m[ts])){              //чи не повторювалось вже
+                ch=m[ts];
+                for(int ts2=0;ts2<m.length;ts2++)             
+                    if(m[ts2]==ch){   
+                        n[k]=ts2+1;  
+                        k++;         //кількість повторів
+                    }
+                if (k>3){            //якщо більше 100000
+                    System.out.print("топ100000 найбільш вживаних фраз ");
+                  //  for(int a=0;a<k;a++) System.out.print(" "+n[a]);
+                    System.out.println(": "+ch);
+                }
+                k=0; //Обнуляємо
+                pCh[ts]=ch; 
+            }
+            
+        }
+    }
+    static boolean povtor(String i){          
+        for(int a = 0; a<ts;a++){
+            if (pCh[a]==i) return true;
+        }
+        return false;
+    }
+ 
+}
+
+
